@@ -1,0 +1,94 @@
+
+
+
+.camionDOS {
+    width: 250px;
+    height: 80px;
+    background: rgb(228, 253, 3);
+    position: absolute;
+    animation: dos infinite linear 7s;
+    margin-top: 50px;
+}
+
+.camion {
+    width: 250px;
+    height: 80px;
+    background: red;
+    position: absolute;
+    animation: un infinite linear 5s;
+}
+
+@keyframes un {
+    to {transform: translate(-250px)
+    }
+    from{
+          transform:  translate(1500px)
+    }
+}
+
+
+@keyframes dos {
+    to {transform: translate(-250px)
+    }
+    from{
+          transform:  translate(1500px)
+    }
+}
+
+
+.ruedas{
+    height: 20px;
+    width: 230px;
+    display: flex;
+    margin-top: 32px;
+}
+
+.rueda{
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    /* flex: 4 4; */
+    margin: auto;
+}
+.rueda::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: grey;
+  display: block;
+margin-top: 5px;
+margin-left: 5px;
+}
+
+.rueda::before{
+    content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid rgb(255, 255, 255) 1px;
+  display: block;
+margin-top: 5px;
+margin-left: 5px;
+position: absolute;
+}
+
+
+.ventanas{
+    height: 20px;
+    width: 230px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.ventanas div{
+    width: 30px;
+    height: 30px;
+    background: rgb(121, 133, 241);
+    border-radius: 5%;
+    margin: auto;
+    
+
+    border: 2px gold solid;
+}
