@@ -1,0 +1,180 @@
+body {
+ background: rgb(84, 207, 238);
+ animation: anochecer infinite linear 30s;
+}
+
+.pasto{width: 103%;height: 300px;background-color: green;position: absolute;bottom: 0px;margin-left: -16px;}
+
+
+.sol{
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    background: #fff700;
+    position: absolute;
+    box-shadow: inset 0px 0px 17px 4px #949024;
+    animation: sol infinite linear 30s;
+}
+
+@keyframes sol {
+    to{ transform: translateX(-60px)}
+    from{ transform: translateX(2000px)}
+}
+
+
+
+.carril{
+   height: 125px;
+   width: 105%;
+   background: gray;
+   border: 5px #fff703;
+   border-style: dashed;
+   margin-top: 35px;
+}
+
+.carril::before{
+    content: "";
+    width: 100%;
+    height: 3px;  
+    display: block;
+    border: 5px dashed #fff700;
+    margin-top: 44px;
+}
+
+.nube{
+    animation: nubeAA infinite linear 20s;
+}
+
+.nube div {
+    border-radius: 50%;
+    width: 148px;
+    height: 85px;
+    background: rgb(216, 216, 216);
+    position: absolute;
+}
+
+.nubeA{
+    margin: 20px;
+}
+.nubeB{
+    margin: 0 56px;
+}
+.nubeC{
+    margin: -8px 26px;
+}
+.nubeD{
+    margin: -16px;
+}
+
+
+.nubeDOS{
+    margin-top: 41px;
+    margin-left: -30px;
+    position: absolute;
+    animation: nubeAB infinite linear 30s;
+}
+
+.nubeTRES{
+    margin-top: 1px;
+    position: absolute;
+    animation: nubeAC infinite linear 25s;
+}
+
+
+
+
+@keyframes nubeAA {
+    to {transform: translateX(-200px)}
+    from {transform: translateX(1400px)}
+}
+
+
+@keyframes nubeAB {
+    to {transform: translateX(-200px)}
+    from {transform: translateX(1400px)}
+}
+
+
+@keyframes nubeAC {
+    to {transform: translateX(-200px)}
+    from {transform: translateX(1400px)}
+}
+
+
+
+.edificioFondo{
+    z-index: 9000;
+    position: relative;
+}
+
+
+.edificio {
+    width: 133px;
+    height: 300px;
+    background: black;
+    display: -webkit-inline-box;
+    margin-top: 87px;
+}
+
+.edificio div{
+    animation: anochecerV infinite linear 20s;
+    width: 45px;
+    height: 48px;
+    margin: 5px;
+    display: -webkit-inline-box;
+}
+
+.edificio div::after{
+    content: "";
+    width: 32px;
+    height: 2px;
+    background: #d8d8d8;
+    display: block;
+    transform: rotate(120deg);
+    margin: 21px -26px;
+}
+
+.edificio div::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #b9b9cf;
+    display: block;
+    transform: rotate(122deg);
+    margin: 18px 6px;
+}
+
+
+.enano{
+    height: 204px;
+}
+
+.otra-claser{
+
+    background: rgb(153, 51, 51);
+}
+
+
+@keyframes anochecer {
+    to {background: rgb(84, 207, 238);}
+    from {background: rgb(16, 35, 43);}
+} 
+
+@keyframes anochecerV {
+    to {background: rgb(212, 227, 248);}
+    from {background: rgb(255, 248, 145);}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
